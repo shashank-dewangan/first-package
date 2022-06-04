@@ -2,9 +2,13 @@
   "name": "@sd-packages/first-package",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/shashank-dewangan/first-package/issues"
   },
-  "homepage": "https://github.com/shashank-dewangan/first-package#readme"
+  "homepage": "https://github.com/shashank-dewangan/first-package#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
 }
